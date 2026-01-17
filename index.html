@@ -8,19 +8,36 @@
 </head>
 <body>
 
-<div class="slider">
-  <div class="page">
-    <img src="images/halaman-1.jpg" alt="Halaman Koran 1">
+<div class="book">
+
+  <!-- HALAMAN 1 : KORAN -->
+  <div class="page page-1">
+    <img src="images/koran-bg.jpg" class="koran">
+
+    <!-- FOTO ORANG BERGANTI -->
+    <img src="images/pasangan-1.jpg" class="photo active">
+    <img src="images/pasangan-2.jpg" class="photo">
+    <img src="images/pasangan-3.jpg" class="photo">
   </div>
 
-  <div class="page">
-    <a href="https://maps.app.goo.gl/8mxJGfzca91FqrnH8" target="_blank">
-      <img src="images/halaman-2.jpg" alt="Peta Lokasi">
-    </a>
+  <!-- HALAMAN 2 : MAP -->
+  <div class="page page-2">
+    <img src="images/map-akad.jpg" class="map akad"
+         onclick="window.open('https://maps.app.goo.gl/8mxJGfzca91FqrnH8')">
+
+    <img src="images/map-resepsi.jpg" class="map resepsi"
+         onclick="window.open('https://maps.app.goo.gl/4LMkNatExS9qY5gq7')">
   </div>
+
 </div>
 
-<audio id="music" src="music/lagu.mp3" loop></audio>
+<!-- AUDIO -->
+<audio id="music" loop>
+  <source src="music/lagu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- TOMBOL MUSIK -->
+<button id="musicBtn" class="music-btn">🔇</button>
 
 <script src="script.js"></script>
 </body>
